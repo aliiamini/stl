@@ -4,6 +4,10 @@
 # stl
 
 <!-- badges: start -->
+
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![R-CMD-check](https://github.com/aliiamini/stl/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/aliiamini/stl/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 # stl <img src="man/figures/logo.png" align="right" height="120" />
@@ -29,7 +33,7 @@ remotes::install_github("aliiamini/stl")
 #> rlang (1.1.4  -> 1.1.6 ) [CRAN]
 #> yaml  (2.3.8  -> 2.3.10) [CRAN]
 #> Installing 5 packages: Rcpp, glue, cli, rlang, yaml
-#> Installing packages into 'C:/Users/aliia/AppData/Local/Temp/RtmpKqiG1e/temp_libpath4df4622f2e1'
+#> Installing packages into 'C:/Users/aliia/AppData/Local/Temp/RtmpKqiG1e/temp_libpath4df455bf52a5'
 #> (as 'lib' is unspecified)
 #> package 'Rcpp' successfully unpacked and MD5 sums checked
 #> package 'glue' successfully unpacked and MD5 sums checked
@@ -38,17 +42,17 @@ remotes::install_github("aliiamini/stl")
 #> package 'yaml' successfully unpacked and MD5 sums checked
 #> 
 #> The downloaded binary packages are in
-#>  C:\Users\aliia\AppData\Local\Temp\Rtmp0I3qet\downloaded_packages
+#>  C:\Users\aliia\AppData\Local\Temp\Rtmpqi1NwE\downloaded_packages
 #> ── R CMD build ─────────────────────────────────────────────────────────────────
-#>       ✔  checking for file 'C:\Users\aliia\AppData\Local\Temp\Rtmp0I3qet\remotes216c6b082fac\aliiamini-stl-17ceea0/DESCRIPTION'
-#>       ─  preparing 'stl': (390ms)
+#>       ✔  checking for file 'C:\Users\aliia\AppData\Local\Temp\Rtmpqi1NwE\remotes3d7c6b9d18ae\aliiamini-stl-3ca7407/DESCRIPTION'
+#>       ─  preparing 'stl':
 #>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   ✔  checking DESCRIPTION meta-information
 #>       ─  checking for LF line-endings in source and make files and shell scripts
 #>   ─  checking for empty or unneeded directories
 #>       ─  building 'stl_0.0.0.9000.tar.gz'
 #>      
 #> 
-#> Installing package into 'C:/Users/aliia/AppData/Local/Temp/RtmpKqiG1e/temp_libpath4df4622f2e1'
+#> Installing package into 'C:/Users/aliia/AppData/Local/Temp/RtmpKqiG1e/temp_libpath4df455bf52a5'
 #> (as 'lib' is unspecified)
 ```
 
@@ -58,12 +62,11 @@ You can install the development version of stl from
 ``` r
 # install.packages("pak")
 pak::pak("aliiamini/stl")
-#> ✔ Updated metadata database: 5.76 MB in 15 files.
-#> ℹ Updating metadata database✔ Updating metadata database ... done
+#> ℹ Loading metadata database✔ Loading metadata database ... done
 #>  
 #> → Will install 29 packages.
-#> → Will download 29 CRAN packages (16.41 MB).
-#> + backports     1.5.0  [dl] (122.68 kB)
+#> → Will download 28 CRAN packages (16.28 MB), cached: 1 (122.68 kB).
+#> + backports     1.5.0  
 #> + base64enc     0.1-3  [dl] (33.12 kB)
 #> + config        0.3.2  [dl] (112.15 kB)
 #> + generics      0.1.4  [dl] (85.14 kB)
@@ -92,64 +95,63 @@ pak::pak("aliiamini/stl")
 #> + whisker       0.4.1  [dl] (83.97 kB)
 #> + withr         3.0.2  [dl] (231.37 kB)
 #> + zeallot       0.2.0  [dl] (62.77 kB)
-#> ℹ Getting 29 pkgs (16.41 MB)
-#> ✔ Got base64enc 0.1-3 (x86_64-w64-mingw32) (33.13 kB)
-#> ✔ Got Metrics 0.1.4 (i386+x86_64-w64-mingw32) (86.38 kB)
-#> ✔ Got R6 2.6.1 (i386+x86_64-w64-mingw32) (88.72 kB)
-#> ✔ Got config 0.3.2 (i386+x86_64-w64-mingw32) (112.45 kB)
-#> ✔ Got backports 1.5.0 (x86_64-w64-mingw32) (122.68 kB)
-#> ✔ Got generics 0.1.4 (i386+x86_64-w64-mingw32) (85.05 kB)
-#> ✔ Got RcppTOML 0.2.3 (x86_64-w64-mingw32) (610.98 kB)
-#> ✔ Got tidyselect 1.2.1 (i386+x86_64-w64-mingw32) (228.88 kB)
-#> ✔ Got tensorflow 2.16.0 (i386+x86_64-w64-mingw32) (216.46 kB)
-#> ✔ Got ps 1.9.1 (x86_64-w64-mingw32) (658.44 kB)
-#> ✔ Got zeallot 0.2.0 (i386+x86_64-w64-mingw32) (62.80 kB)
-#> ✔ Got pROC 1.18.5 (x86_64-w64-mingw32) (1.17 MB)
-#> ✔ Got plyr 1.8.9 (x86_64-w64-mingw32) (1.11 MB)
-#> ✔ Got withr 3.0.2 (i386+x86_64-w64-mingw32) (233.12 kB)
-#> ✔ Got png 0.1-8 (x86_64-w64-mingw32) (194.23 kB)
-#> ✔ Got processx 3.8.6 (x86_64-w64-mingw32) (699.26 kB)
-#> ✔ Got tfautograph 0.3.2 (i386+x86_64-w64-mingw32) (165.43 kB)
-#> ✔ Got rstudioapi 0.17.1 (i386+x86_64-w64-mingw32) (346.36 kB)
-#> ✔ Got whisker 0.4.1 (i386+x86_64-w64-mingw32) (84.36 kB)
-#> ✔ Got vctrs 0.6.5 (x86_64-w64-mingw32) (1.37 MB)
-#> ✔ Got magrittr 2.0.3 (x86_64-w64-mingw32) (229.98 kB)
-#> ✔ Got keras 2.15.0 (i386+x86_64-w64-mingw32) (3.30 MB)
-#> ✔ Got rprojroot 2.0.4 (i386+x86_64-w64-mingw32) (115.02 kB)
-#> ✔ Got here 1.0.1 (i386+x86_64-w64-mingw32) (64.97 kB)
-#> ✔ Got lifecycle 1.0.4 (i386+x86_64-w64-mingw32) (141.48 kB)
-#> ✔ Got tfruns 1.5.3 (i386+x86_64-w64-mingw32) (1.49 MB)
-#> ✔ Got rappdirs 0.3.3 (x86_64-w64-mingw32) (52.80 kB)
-#> ✔ Got reticulate 1.42.0 (x86_64-w64-mingw32) (2.28 MB)
-#> ✔ Got jsonlite 2.0.0 (x86_64-w64-mingw32) (1.11 MB)
-#> ✔ Installed Metrics 0.1.4  (526ms)
-#> ✔ Installed R6 2.6.1  (731ms)
-#> ✔ Installed generics 0.1.4  (809ms)
-#> ✔ Installed base64enc 0.1-3  (1s)
-#> ✔ Installed backports 1.5.0  (1.1s)
-#> ✔ Installed here 1.0.1  (1.2s)
-#> ✔ Installed config 0.3.2  (1.4s)
-#> ✔ Installed RcppTOML 0.2.3  (1.6s)
-#> ✔ Installed magrittr 2.0.3  (1.6s)
-#> ✔ Installed jsonlite 2.0.0  (1.8s)
-#> ✔ Installed lifecycle 1.0.4  (1.9s)
-#> ✔ Installed keras 2.15.0  (2.1s)
-#> ✔ Installed pROC 1.18.5  (1.5s)
-#> ✔ Installed png 0.1-8  (1.4s)
-#> ✔ Installed plyr 1.8.9  (1.7s)
-#> ✔ Installed processx 3.8.6  (1.8s)
-#> ✔ Installed ps 1.9.1  (1.9s)
-#> ✔ Installed rappdirs 0.3.3  (1.9s)
-#> ✔ Installed reticulate 1.42.0  (1.8s)
-#> ✔ Installed rprojroot 2.0.4  (1.9s)
-#> ✔ Installed rstudioapi 0.17.1  (1.9s)
-#> ✔ Installed tensorflow 2.16.0  (1.8s)
-#> ✔ Installed tfautograph 0.3.2  (1.8s)
-#> ✔ Installed tfruns 1.5.3  (1.8s)
-#> ✔ Installed tidyselect 1.2.1  (1.9s)
-#> ✔ Installed vctrs 0.6.5  (1.9s)
-#> ✔ Installed whisker 0.4.1  (1.7s)
-#> ✔ Installed withr 3.0.2  (1.6s)
-#> ✔ Installed zeallot 0.2.0  (1.6s)
-#> ✔ 1 pkg + 36 deps: kept 6, added 29, dld 29 (16.45 MB) [21.5s]
+#> ℹ Getting 28 pkgs (16.28 MB), 1 (122.68 kB) cached
+#> ✔ Cached copy of Metrics 0.1.4 (i386+x86_64-w64-mingw32) is the latest build
+#> ✔ Cached copy of R6 2.6.1 (i386+x86_64-w64-mingw32) is the latest build
+#> ✔ Cached copy of RcppTOML 0.2.3 (x86_64-w64-mingw32) is the latest build
+#> ✔ Cached copy of base64enc 0.1-3 (x86_64-w64-mingw32) is the latest build
+#> ✔ Cached copy of config 0.3.2 (i386+x86_64-w64-mingw32) is the latest build
+#> ✔ Cached copy of generics 0.1.4 (i386+x86_64-w64-mingw32) is the latest build
+#> ✔ Cached copy of here 1.0.1 (i386+x86_64-w64-mingw32) is the latest build
+#> ✔ Cached copy of jsonlite 2.0.0 (x86_64-w64-mingw32) is the latest build
+#> ✔ Cached copy of keras 2.15.0 (i386+x86_64-w64-mingw32) is the latest build
+#> ✔ Cached copy of lifecycle 1.0.4 (i386+x86_64-w64-mingw32) is the latest build
+#> ✔ Cached copy of magrittr 2.0.3 (x86_64-w64-mingw32) is the latest build
+#> ✔ Cached copy of pROC 1.18.5 (x86_64-w64-mingw32) is the latest build
+#> ✔ Cached copy of plyr 1.8.9 (x86_64-w64-mingw32) is the latest build
+#> ✔ Cached copy of png 0.1-8 (x86_64-w64-mingw32) is the latest build
+#> ✔ Cached copy of processx 3.8.6 (x86_64-w64-mingw32) is the latest build
+#> ✔ Cached copy of ps 1.9.1 (x86_64-w64-mingw32) is the latest build
+#> ✔ Cached copy of rappdirs 0.3.3 (x86_64-w64-mingw32) is the latest build
+#> ✔ Cached copy of reticulate 1.42.0 (x86_64-w64-mingw32) is the latest build
+#> ✔ Cached copy of rprojroot 2.0.4 (i386+x86_64-w64-mingw32) is the latest build
+#> ✔ Cached copy of rstudioapi 0.17.1 (i386+x86_64-w64-mingw32) is the latest build
+#> ✔ Cached copy of tensorflow 2.16.0 (i386+x86_64-w64-mingw32) is the latest build
+#> ✔ Cached copy of tfautograph 0.3.2 (i386+x86_64-w64-mingw32) is the latest build
+#> ✔ Cached copy of tfruns 1.5.3 (i386+x86_64-w64-mingw32) is the latest build
+#> ✔ Cached copy of tidyselect 1.2.1 (i386+x86_64-w64-mingw32) is the latest build
+#> ✔ Cached copy of vctrs 0.6.5 (x86_64-w64-mingw32) is the latest build
+#> ✔ Cached copy of whisker 0.4.1 (i386+x86_64-w64-mingw32) is the latest build
+#> ✔ Cached copy of withr 3.0.2 (i386+x86_64-w64-mingw32) is the latest build
+#> ✔ Cached copy of zeallot 0.2.0 (i386+x86_64-w64-mingw32) is the latest build
+#> ✔ Installed Metrics 0.1.4  (437ms)
+#> ✔ Installed R6 2.6.1  (568ms)
+#> ✔ Installed RcppTOML 0.2.3  (903ms)
+#> ✔ Installed backports 1.5.0  (998ms)
+#> ✔ Installed base64enc 0.1-3  (1.1s)
+#> ✔ Installed config 0.3.2  (1.2s)
+#> ✔ Installed generics 0.1.4  (1.3s)
+#> ✔ Installed jsonlite 2.0.0  (1.3s)
+#> ✔ Installed here 1.0.1  (1.5s)
+#> ✔ Installed lifecycle 1.0.4  (1.5s)
+#> ✔ Installed keras 2.15.0  (1.7s)
+#> ✔ Installed magrittr 2.0.3  (1.9s)
+#> ✔ Installed pROC 1.18.5  (890ms)
+#> ✔ Installed plyr 1.8.9  (984ms)
+#> ✔ Installed png 0.1-8  (1.1s)
+#> ✔ Installed processx 3.8.6  (1.3s)
+#> ✔ Installed rappdirs 0.3.3  (1.2s)
+#> ✔ Installed ps 1.9.1  (1.3s)
+#> ✔ Installed rprojroot 2.0.4  (1.3s)
+#> ✔ Installed reticulate 1.42.0  (1.4s)
+#> ✔ Installed tensorflow 2.16.0  (1.3s)
+#> ✔ Installed rstudioapi 0.17.1  (1.3s)
+#> ✔ Installed tfautograph 0.3.2  (1.2s)
+#> ✔ Installed tfruns 1.5.3  (1.2s)
+#> ✔ Installed tidyselect 1.2.1  (1.3s)
+#> ✔ Installed vctrs 0.6.5  (1.2s)
+#> ✔ Installed whisker 0.4.1  (1s)
+#> ✔ Installed withr 3.0.2  (967ms)
+#> ✔ Installed zeallot 0.2.0  (946ms)
+#> ✔ 1 pkg + 36 deps: kept 6, added 29 [8.8s]
 ```
