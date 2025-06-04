@@ -1,0 +1,43 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# stl
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+# stl <img src="man/figures/logo.png" align="right" height="120" />
+
+**stl** is an R package for Survey Transfer Learning (STL)—a sustainable framework for recycling political survey data using deep learning.
+
+It enables researchers to:
+- Transfer predictive knowledge from one survey to another (e.g., CES → ANES),
+- Generate synthetic responses when key variables are missing,
+- Avoid costly, redundant surveys and reduce environmental impact.
+
+## Installation
+
+```{r}
+# Not yet on CRAN
+remotes::install_github("aliiamini/stl")
+```
+
+
+You can install the development version of stl from [GitHub](https://github.com/) with:
+
+```{r}
+# install.packages("pak")
+pak::pak("aliiamini/stl")
+```
